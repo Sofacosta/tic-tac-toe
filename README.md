@@ -7,9 +7,18 @@ Tic Tac Toe is a game of two players.
 ## Specs
  
 ```
-Describe:  
-Test: "It should return an array of numbers inputted by the user including the number 0"
-Expect(beepBoop(08234)).toEqual(["08234"]);
+Describe: isWinner(board);
+Test: "If the first row has all one character (x's or o's) it should return true"
+Expect(isWinner(board).toEqual(true));  
+
+Test: "If any row has all of the same character it should return true"
+Expect(isWinner(board).toEqual(true));
+
+Test: "If any column has all the same character it should return true"
+Expect(isWinner(board).toEqual(true));
+
+Test: "If either diagonal has all the same character it should return true."
+Expect(isWinner(board).toEqual(true));
  
 ```
  
@@ -30,12 +39,12 @@ OR
 * Open index.html into your browser: $ open index.html
  
 ## Known Bugs
-* No known bugs
+* Game and player board spaces change size when filled with player mark
 ## Notes
 * 
 ## License
 * [MIT](https://choosealicense.com/licenses/mit)
-* Copyright 2021 Sofia Acosta
+* Copyright 2021 Sofia Acosta and Cat Denton
 ## Contact
 Sofia Acosta sofiaacostarascon@gmail.com and Cat Denton <willwdenton@gmail.com>
  
